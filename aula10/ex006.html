@@ -6,14 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="area" onclick="clicar()">
+    <!--<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>   -->
+
+    <div id="area">
         Interaja...
     </div>
 
     <script>
+        var a = window.getElementById('area')
+        a.addEventListener('click' , clicar)
+        a.addEventListener('mouseenter' , entrar)
+        a.addEventListener('mouseout' , sair)
+
         function clicar() {
-            var a = window.getElementById('area')
-            a.innerText = 'Clicou!'
+            
+            a.innerText = 'Clicou!' 
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!' 
+        }
+
+        function sair() {
+            
+            a.innerText = 'Saiu!' 
+            a.style.background = 'green'
         }
     </script>
 </body>
