@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(42, 139, 42);
+            margin: auto;
+            margin-top: 35px;
+            border-radius: 10px;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <!--<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
@@ -15,7 +30,7 @@
     </div>
 
     <script>
-        var a = window.getElementById('area')
+        var a = window.document.getElementById('area')
         a.addEventListener('click' , clicar)
         a.addEventListener('mouseenter' , entrar)
         a.addEventListener('mouseout' , sair)
