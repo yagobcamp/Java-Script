@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brasileiro ou Estrangeiro?</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+
+        h1 {
+             text-align: center;
+        }
+
+        input {
+            display: block;
+            margin: auto;
+        }
+
+        .brasil {
+            text-align: center;
+            color: green;
+        }
+
+        .estrangeiro {
+            text-align: center;
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <h1> Qual país você nasceu? </h1>
-    <input type="text" name="txtpais" id="txtpais">
-    <input type="button" value="verificar" onclick = "validar()">
+    <input type="text" name="txtpais" id="txtpais"> <br>
+    <input type="button" value="verificar" onclick = "validar()"> <br>
     <div id="res">
 
     </div>
@@ -18,9 +45,9 @@
             var pais = window.document.querySelector('#txtpais').value
             var res = window.document.querySelector('div#res')
                 if (pais == `Brasil`){
-            res.innerHTML += `   Voce é brasileiro! `
+            res.innerHTML += `   <p class="brasil">Voce é brasileiro!</p> `
                } else {
-            res.innerHTML += `   Voce é estrangeiro! `
+            res.innerHTML += `  <p class="estrangeiro"> Voce é estrangeiro!</p> `
                }
         }
     </script>

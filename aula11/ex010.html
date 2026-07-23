@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif; 
+            font-size: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            margin: auto;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* Altera apenas a última linha */
+        .alerta {
+            color: green;            /* Muda a cor do texto para verde */
+            font-size: 18px;           /* Altera o tamanho da fonte */
+            font-weight: bold;         /* Deixa o texto em negrito */
+            margin-top: 15px;          /* Cria um espaço acima da linha */
+        }
+
+        .multa {
+            color: red;
+            font-size: 18px;          
+            font-weight: bold;         
+            margin-top: 15px; 
+        }
+
+    </style>
 </head>
 <body>
     <h1>SISTEMAS DE MULTAS</h1>
-    <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="number" name="txtvel" id="txtvel"> <p>Km/h</p>
     <input type="button" value="verificar" onclick = "calcular()">
     <div id="res">
 
@@ -20,9 +57,11 @@
         var vel = Number (txtv.value)
         res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong></p>`
             if (vel > 60){
-                res.innerHTML += `Voce foi <strong>MULTADO</strong> por excesso de velocidade!`
-            }
-        res.innerHTML += `<p>Dirija sempre com cinto de segunraça!`
+        res.innerHTML += `<p class="multa">Você foi <strong>MULTADO</strong> por excesso de velocidade!</p>`
+        }
+        // Adicionada a classe "alerta" 
+        res.innerHTML += `<p class="alerta">Dirija sempre com cinto de segurança!</p>` 
+
         }
 
     </script>
