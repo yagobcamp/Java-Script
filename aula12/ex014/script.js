@@ -3,14 +3,15 @@ function carregar() {
     var img = window.document.getElementById('imagem')
     var data = new Date()
     var hora = data.getHours()
-    msg.innerHTML = Agora são ${hora} horas.
-    if (hora >= 0 && hora < 12) {
+    msg.innerHTML = `Agora são ${hora} horas.`
+    if (hora >= 5 && hora < 12) {
         // Bom dia
-        img.scr = 'fotomanha.png'
-    } else if (hora >= 12 && hora < 18)
-        //Boa tarde
-        img.scr = 'fototarde.png'
-}   else {
+        img.src = 'modelo/fotomanha.png'
+    }  else if (hora >= 12 && hora < 18) {
+    // Boa tarde
+    img.src = 'modelo/fototarde.png'
+} else {
     // Boa noite
-    img.scr = 'fotonoite.png'
+    img.src = 'modelo/fotonoite.png'
+}
 }

@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-* {
-    
-}
-
 body {
     background-color: rgb(111, 190, 227);
 }
@@ -25,6 +21,8 @@ section {
 div {
     text-align: center;
 }
+
+
 
 footer {
     color: rgb(246, 241, 241);
