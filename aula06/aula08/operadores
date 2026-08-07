@@ -1,0 +1,51 @@
+ordem de precednecia dos operadores aritméticos 
+()
+**
+* / %
++ -
+
+var n = 3                       
+n= n + 4
+n= n - 5
+n= n * 4
+n= n / 2
+n= n ** 2 
+n= n % 5
+
+n += 4
+n -= 5 
+n *= 4
+n /= 2
+n **= 2
+n %= 5
+
+! - Negação "Eu quero uma caneta mas NÃO pode ser da cor  vermelha"
+! - true --> false
+    false --> true
+ 
+&& - Conjunção "Eu quero uma caneta azul E preta"
+&& -  true - true --> true
+      true - false --> false
+      false - true --> false
+      false - false --> false
+
+|| - Disjunção  "Eu quero uma caneta azul OU uma caneta preta"
+
+||    true - true --> true
+      true - false --> true
+      false - true --> true
+      false - false --> false
+
+
+Ordem de precedência 
+
+Operadores aritméticos
+()  **   /
+
+Operadores Relacionais
+<  >  >=
+
+Operadores Lógicos
+!
+&&
+||
