@@ -8,3 +8,4 @@ function contar() {
     } else{
         alert('TUDO OK')
     }
+}
