@@ -25,7 +25,7 @@ num.sort()
         console.log(num)
         console.log(`O valor tem ${num.length} posições`)
         console.log(`O primeiro valor é ${num[0]} posições`)
-let pos = num.index0f(8)
+let pos = num.indexOf(8)
     if (pos == -1) {
         console.log ('O valor não foi encontrado')
     } else {
