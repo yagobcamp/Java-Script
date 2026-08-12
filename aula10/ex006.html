@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        div#area {
-            font: normal 20pt Arial;
-            background: rgb(42, 139, 42);
-            margin: auto;
-            margin-top: 35px;
-            border-radius: 10px;
-            color: white;
-            width: 200px;
-            height: 200px;
-            line-height: 200px;
-            text-align: center;
-        }
-    </style>
+    <title>Interaja...</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main>
+        <h1>Interação com o usuario</h1>
+    
+    <p>var a = window.document.getElementById('area')<br>
+        a.addEventListener('click' , clicar)<br>
+        a.addEventListener('mouseenter' , entrar)<br>
+        a.addEventListener('mouseout' , sair)</p>
+
+        <p>
+        function clicar() {<br>
+            <br>
+            a.innerText = 'Clicou!' <br>
+            a.style.background = 'red'<br>
+        }
+
+        function entrar() {<br>
+            a.innerText = 'Entrou!' <br>
+        }
+
+        function sair() {<br>
+            
+            a.innerText = 'Saiu!' <br>
+            a.style.background = 'green'<br>
+        }<br></p>
+
     <!--<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         Interaja...
     </div>   -->
@@ -28,7 +39,7 @@
     <div id="area">
         Interaja...
     </div>
-
+</main>
     <script>
         var a = window.document.getElementById('area')
         a.addEventListener('click' , clicar)
